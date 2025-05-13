@@ -5,7 +5,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
     <style>
-        font-family: Courier New, Courier, monospace;
+        
         body {
             margin: 0;
             padding: 0;
@@ -35,7 +35,7 @@
             height: 50px;
         }
         #hero-section {
-            display: block;
+            display: flex;
             padding-inline: 15%;
             padding-top: 100px;
             align-items: center;
@@ -45,6 +45,7 @@
         }
         #hero-section h1 {
             font-size: 30px;
+            align-items: center;
         }
         #hero-section button {
             background-color: black;
@@ -60,6 +61,38 @@
             font-size: 30px;
 
         }
+        @media screen and (max-width: 1200px) {
+            
+            
+            body{
+                background-color: rgb(255, 255, 255);
+
+            }
+            nav{
+            display: none;
+            }
+        }
+        @media screen and (max-width:800px){
+            body{
+                background-color: white;
+            }
+            #hero-section{
+                display: block;
+                font-size:20px;
+
+            }
+        #hero-section h1{
+            font-size: 50px;
+        }
+        #hero-section img {
+            width: 100%;
+        }
+        @media screen and (max-width:400px) {
+            #hero-section h1 {
+                font-size:30px ;
+            }
+        }
+    }   
     </style>
 </head>
 <body>
@@ -71,8 +104,16 @@
             <li>Articles</li>
         </ul>
         <button>CB</button>
-        
+         <ul>
+            <li><i style="color: lightblue; " class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i style="color: blue; " class="fa-brands fa-linkedin"></i></li>
+            <li><i style="color: red; " class="fa-brands fa-pinterest"></i></li>
+            <li><i style="color: pink; " class="fa-solid fa-bowling-ball"></i></li>
+            <li><i class="fa-solid fa-moon"></i></li>
+        </ul>
     </nav>
+        
     <div id="hero-section">
         <img src="https://i.pinimg.com/736x/fa/d5/e7/fad5e79954583ad50ccb3f16ee64f66d.jpg" alt = " " >
         <div>
